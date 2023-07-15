@@ -1,0 +1,88 @@
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow" style="width: 150%;">
+                    <!-- Page Heading -->
+                    <h1><b>Data Analysis</b></h1>
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+
+                    <!-- Content Row -->
+                    <div class="row">
+                            <div class="row" style="margin-top:10px;margin-bottom: 360px;">
+                                <div class="col-sm-2" style="margin-right: 395px;">
+                                    <button class="btn btn-success" routerLink="/data-visual/linechart"
+                                        routerLinkActive="active" style="width: 200%;">Farmer Request Analysis</button>
+                                </div>
+                                <div class="col-sm-2" style="padding-left: 105px;">
+                                    <button class="btn btn-success" routerLink="/data-visual/crequest-chart" 
+                                        routerLinkActive="active" style="width: 470%;">Company Request Analysis</button>
+                                </div>
+                                <!-- <div class="col-sm-2">
+                                    <button class="btn btn-success">Pie Chart</button>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="btn btn-success">Doughnut Chart</button>
+                                </div> -->
+                            </div>
+                        <router-outlet></router-outlet>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; StubbleBuddy 2020</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
+
+</body>

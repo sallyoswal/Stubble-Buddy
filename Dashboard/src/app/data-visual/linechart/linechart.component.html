@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  
+    <!-- Content Row -->
+    <div class="row">
+        <div>  
+            <div class="row" style="width: 109%;">  
+              <div class="col-sm-12 btn btn-primary">  
+                Data Analysis  
+              </div>  
+            </div>  
+            <div class="row" style="margin-top:10px;margin-bottom: 10px;">  
+              <div class="col-sm-2" style="margin-right: 395px">  
+                <button class="btn btn-success" routerLink="/data-visual/linechart" routerLinkActive="active" style="width: 200%">Farmer Request Analysis</button>  
+              </div>  
+              <div class="col-sm-2" style="padding-left: 14px">  
+                <button class="btn btn-success" routerLink="/data-visual/crequest-chart" routerLinkActive="active" style="width: 230%">Company Request Analysis</button>  
+              </div> 
+              <!-- <div class="col-sm-2">  
+                <button class="btn btn-success" >Pie Chart</button>  
+              </div>  
+              <div class="col-sm-2">  
+                <button class="btn btn-success" >Doughnut Chart</button>  
+              </div>  
+              <div class="col-sm-2">  
+                <button class="btn btn-success" routerLink="/Polarchart">Polar Area</button>  
+              </div>  
+              <div class="col-sm-2">  
+              </div>   -->
+            </div>  
+          </div>  
+          <hr style="background-color:black" />  
+          <router-outlet></router-outlet>
+    </div>
+  
+    <div class="chart-container" style="position: relative; height:40vh; width:70vw">    
+        <canvas id="canvas">{{ Linechart }}</canvas>    
+    </div>
+
+  </div>

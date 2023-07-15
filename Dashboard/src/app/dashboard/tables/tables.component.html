@@ -1,0 +1,26 @@
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Tables</h1>
+    <ag-grid-angular style="width: 1050px; height: 300px;" class="ag-theme-alpine" [rowData]="rowData"
+        [columnDefs]="columnDefs" [gridOptions]="gridOptions">
+    </ag-grid-angular>
+
+    <div class="button">
+        <button style="background-color: cornflowerblue;
+        margin-top: 1px;
+        font-size: 22px;
+        border-radius: 5px;     
+        position: absolute;" (click) = "DistributedReq()">Distributed Request</button>
+    </div>
+
+    <div class="button">
+        <button style="background-color: cornflowerblue;
+        margin-top: 1px;
+        font-size: 22px;
+        border-radius: 5px;     
+        position: absolute;
+        right: 25px;" (click) = "RowSelection()">Proceed</button>
+    </div>
+
+</div>
